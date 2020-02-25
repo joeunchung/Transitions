@@ -1,0 +1,112 @@
+/*  w3schools.com/cssref to look at all prperties */
+/* background... just for appearance. */
+body { background-color: #D3D3D3;}
+
+
+
+a.button-a {
+  padding: 5px 10px;
+  background: #ffffff;
+  border: 5px double #9bffcd;
+  color: #111;
+  font-size: 24px;
+  text-decoration: none;
+
+  /* border options: dotted, dashed, solid, double, groove, ridge
+  inset, outset */
+
+
+  -webkit-transition-property:background;
+    /*property to be transitions */
+  -webkit-transition-duration: 0.7s;
+    /*how long transtiion will last */
+  -webkit-transition-timing-function: ease;
+    /*how fast the transition happens over time. "ease" or "linear", "ease-in", "ease-out", "ease-in-out"*/
+  -webkit-transition-delay: 0s;
+  -moz-transition: .3s linear .2s;
+  -o-transition: .3s linear .2s;
+  transition: .3s linear .2s;
+
+
+  /* Can be written in one line as below
+  -webkit-transition: background .3s ease .5s;
+  or
+  -webkit-transition: all 0.5s ease; */
+  }
+
+a.button-a:hover,
+a.button-a:focus {
+  background: #9bffcd;
+  border: 5px dotted #ff9bcd;
+  color: #CC0099;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+
+/* focus is good for accessibility -- allows users to
+use tab instead of mouse */
+
+
+
+
+a.button-b {
+  padding: 5px 10px;
+  background: #111;
+  border: 5px double #ff9bcd;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+
+  /* border options: dotted, dashed, solid, double, groove, ridge
+  inset, outset */
+
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: .2s linear .1s;
+  -o-transition: .2s linear .1s;
+  transition: .2s linear .1s;
+  }
+
+  a.button-b:hover,
+  a.button-b:focus {
+    background: #ffffff;
+    border: 5px dashed #9bffcd;
+    color: #111111;
+    font-size: 24px;
+    text-decoration: underline;
+  }
+
+
+
+
+  a.button-c {
+    padding: 5px 10px;
+    background: #ebeaf2;
+    border: 5px double #000;
+    color: #f23f43;
+    font-size: 24px;
+    text-decoration: none;
+
+    /* border options: dotted, dashed, solid, double, groove, ridge
+    inset, outset */
+
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all .5s ease-in .5s;
+    -o-transition: all .5s ease-in .5s;
+    transition: all .5s ease-in .5s;
+    }
+
+    a.button-c:hover,
+    a.button-c:focus {
+      background: #1f1f20;
+      border: 5px inset #9bffcd;
+      color: #ff5d70;
+      font-size: 24px;
+      text-decoration: line-through;
+    }
+
+p.answer {
+  font-size: 16px;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #333333;
+}
